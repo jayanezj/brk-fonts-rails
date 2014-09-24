@@ -1,0 +1,289 @@
+/*/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///
+/// @author:    José Antonio Yáñez Jiménez
+/// @created:   31/08/2014
+/// @modified:  21/09/2014
+/// @name:      Brk Fonts
+/// @version:   1.0.0 – Altamira Oriole
+/// @site:      http://brkfonts.jimenezfrontend.es
+///
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////*/
+/* FONT PATH
+ * -------------------------- */
+//= depend_on_asset "brk-font.eot"
+//= depend_on_asset "brk-font.woff"
+//= depend_on_asset "brk-font.ttf"
+//= depend_on_asset "brk-font.svg"
+<% v = BrkFonts::Rails::VERSION %>
+@font-face {
+  font-family: 'brkfont';
+  src: url('<%= font_path('brk-font.eot') %>?v=<%= v %>');
+  src: url('<%= font_path('brk-font.eot') %>?#iefix&v=<%= v %>') format('embedded-opentype'), url('<%= font_path('brk-font.woff') %>?v=<%= v %>') format('woff'), url('<%= font_path('brk-font.ttf') %>?v=<%= v %>') format('truetype'), url('<%= font_path('brk-font.svg') %>?v=<%= v %>#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'brkfonts';
+    src: url('<%= font_path('brk-font.svg') %>?35488543#brkfonts') format('svg');
+  }
+}
+*/
+[class^="brk-"]:before,
+[class*=" brk-"]:before {
+  font-family: "brkfont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  font-size: 130%;
+  margin-right: .2em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes */
+
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.brk-sm {
+  font-size: 100%;
+}
+.brk-md {
+  font-size: 150%;
+}
+.brk-lg {
+  font-size: 180%;
+}
+.brk-2x {
+  font-size: 200%;
+}
+.brk-3x {
+  font-size: 300%;
+}
+.brk-4x {
+  font-size: 400%;
+}
+.brk-5x {
+  font-size: 500%;
+}
+.brk-3d {
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+.brk-inverse {
+  color: #ffffff;
+}
+.brk-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  display: inline-block;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.brk-postgresql:before {
+  content: '\e800';
+}
+.brk-valladolid:before {
+  content: '\e801';
+}
+.brk-wordpress-square:before {
+  content: '\e802';
+}
+.brk-python-square:before {
+  content: '\e803';
+}
+.brk-python:before {
+  content: '\e804';
+}
+.brk-mirlodev-square:before {
+  content: '\e805';
+}
+.brk-mirlodev:before {
+  content: '\e806';
+}
+.brk-valladolid-square:before {
+  content: '\e807';
+}
+.brk-miriadax-square:before {
+  content: '\e808';
+}
+.brk-juvecyl-square:before {
+  content: '\e809';
+}
+.brk-juvecyl:before {
+  content: '\e80a';
+}
+.brk-miriadax:before {
+  content: '\e80b';
+}
+.brk-gitlab-square:before {
+  content: '\e80c';
+}
+.brk-opendraft-square:before {
+  content: '\e80d';
+}
+.brk-opendraft:before {
+  content: '\e80e';
+}
+.brk-gitlab:before {
+  content: '\e80f';
+}
+.brk-cyl-square:before {
+  content: '\e810';
+}
+.brk-jquery-square:before {
+  content: '\e811';
+}
+.brk-jquery:before {
+  content: '\e812';
+}
+.brk-cyl:before {
+  content: '\e813';
+}
+.brk-rails-square:before {
+  content: '\e814';
+}
+.brk-postgresql-1:before {
+  content: '\e815';
+}
+.brk-postgresql-square:before {
+  content: '\e816';
+}
+.brk-rails:before {
+  content: '\e817';
+}
+.brk-wordpress:before {
+  content: '\e818';
+}
+.brk-upvx-square:before {
+  content: '\e819';
+}
+.brk-upvx:before {
+  content: '\e81a';
+}
+.brk-coffee-square:before {
+  content: '\e81b';
+}
+.brk-coffee:before {
+  content: '\e81c';
+}
+.brk-jquery-ui:before {
+  content: '\e81d';
+}
+.brk-iebs-square:before {
+  content: '\e81e';
+}
+.brk-django-square:before {
+  content: '\e81f';
+}
+.brk-django:before {
+  content: '\e820';
+}
+.brk-iebs:before {
+  content: '\e821';
+}
+.brk-pyramid-square:before {
+  content: '\e822';
+}
+.brk-java-square:before {
+  content: '\e823';
+}
+.brk-java:before {
+  content: '\e824';
+}
+.brk-pyramid:before {
+  content: '\e825';
+}
+.brk-cisco-square:before {
+  content: '\e826';
+}
+.brk-cisco:before {
+  content: '\e827';
+}
+.brk-ruby:before {
+  content: '\e828';
+}
+.brk-ruby-square:before {
+  content: '\e829';
+}
