@@ -18,6 +18,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "railties", ">= 3.2", "< 5.0"
 
-  spec.add_development_dependency "activesupport", "~> 4.1", ">= 4.1.6"
-  spec.add_development_dependency "sass-rails", "~> 4.0", ">= 4.0.3"
+  spec.add_development_dependency "activesupport"
+  spec.add_development_dependency "sass-rails"
 end
