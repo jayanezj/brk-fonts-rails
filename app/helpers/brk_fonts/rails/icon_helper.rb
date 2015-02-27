@@ -2,7 +2,7 @@ module BrkFonts
   module Rails
     module IconHelper
       def brk_icon(names = "flag", options = {})
-        classes = [""]
+        classes = ["brk"]
         classes.concat Private.icon_names(names)
         classes.concat Array(options.delete(:class))
         text = options.delete(:text)

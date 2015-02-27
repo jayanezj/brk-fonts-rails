@@ -48,12 +48,16 @@ class BrkFontsRailsTest < ActionDispatch::IntegrationTest
     assert_brk_fonts(response)
   end
 
-  # test "helpers should be available in the view" do
-  #   get "/icons"
-  #   assert_response :success
-  #   assert_select "i.fa.fa-flag"
-  #   assert_select "span.fa-stack"
-  # end
+  test "helpers should be available in the view" do
+    get "/icons"
+    assert_response :success
+    assert_select "i.brk.brk-rails"
+    assert_select "i.brk.brk-ruby.brk-2x"
+    assert_match(
+      "Fear the snake <i class=\"brk brk-python\"></i>", response.body)
+    assert_match(
+      "<i class=\"brk brk-mirlodev brk-4x pull-left\"></i>", response.body)
+  end
 
   private
 

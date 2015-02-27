@@ -1,4 +1,4 @@
-# brk-fonts-rails [![Gem Version](https://badge.fury.io/rb/brk-fonts-rails.svg)](http://badge.fury.io/rb/brk-fonts-rails)[![Build Status](https://travis-ci.org/berikin/brk-fonts-rails.svg?branch=v1.0.2)](https://travis-ci.org/berikin/brk-fonts-rails)
+# brk-fonts-rails [![Gem Version](https://badge.fury.io/rb/brk-fonts-rails.svg)](http://badge.fury.io/rb/brk-fonts-rails)[![Build Status](https://travis-ci.org/berikin/brk-fonts-rails.svg?branch=v1.0.3)](https://travis-ci.org/berikin/brk-fonts-rails)
 brk-fonts-rails provides the
 [Brk-Fonts](http://brkfonts.jimenezfrontend.es) web fonts and
 stylesheets as a Rails engine for use with the asset pipeline.
