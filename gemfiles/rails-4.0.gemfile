@@ -1,7 +1,0 @@
-source 'https://rubygems.org'
-
-ruby '2.1.5'
-
-gemspec :path => "../"
-gem "railties", :github => "rails/rails", :branch => "4-0-stable"
-gem "sass-rails", :github => "rails/sass-rails", :branch => "master"
