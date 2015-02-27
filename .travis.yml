@@ -10,10 +10,12 @@ gemfile:
   - gemfiles/rails-3.2.gemfile
   - gemfiles/rails-4.1.gemfile
   - gemfiles/rails-4.2.gemfile
-  - gemfiles/rails-master.gemfile
 matrix:
   exclude:
     - rvm: 1.9.3
       gemfile: gemfiles/rails-master.gemfile
     - rvm: 2.2.0
       gemfile: gemfiles/rails-3.2.gemfile
+  include:
+    - rvm: 2.2.0
+      gemfile: gemfiles/rails-master.gemfile
